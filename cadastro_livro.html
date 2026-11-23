@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Livros — Sistema Literário</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📚</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header-bar">
+        <h2>📖 Cadastrar Livros</h2>
+        <div class="header-actions">
+            <a href="cadastro_autor.html" class="btn-back">← Autores</a>
+            <a href="index.html" class="btn-back">Menu</a>
+        </div>
+    </div>
+
+    <form action="#" method="get" enctype="multipart/form-data">
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="autor">Autor</label>
+                <select id="autor" name="autor" required>
+                    <option value="">Selecione o autor</option>
+                    <option value="1">Machado de Assis</option>
+                    <option value="2">J.R.R. Tolkien</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Ex.: Dom Casmurro" required>
+            </div>
+            <div class="form-group">
+                <label for="editora">Editora</label>
+                <input type="text" id="editora" name="editora" placeholder="Ex.: Companhia das Letras">
+            </div>
+            <div class="form-group">
+                <label for="genero">Gênero</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Selecione o gênero</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Ficção científica">Ficção científica</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Biografia">Biografia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="previa">Link da prévia</label>
+                <input type="url" id="previa" name="previa" placeholder="https://books.google.com.br/...">
+                <small>Link de amostra ou prévia do livro</small>
+            </div>
+            <div class="form-group">
+                <label for="capa">Capa do livro</label>
+                <input type="file" id="capa" name="capa" accept="image/*">
+                <small>JPG ou PNG</small>
+            </div>
+            <div class="form-group full">
+                <label for="sinopse">Sinopse</label>
+                <textarea id="sinopse" name="sinopse" placeholder="Escreva a sinopse do livro..."></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">💾 Salvar livro</button>
+            </div>
+        </div>
+    </form>
+
+    <h3>Livros do autor selecionado</h3>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-capa">Capa</th>
+                    <th>Título</th>
+                    <th>Editora</th>
+                    <th>Gênero</th>
+                    <th class="col-previa">Prévia</th>
+                    <th class="col-acoes">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-capa"><div class="no-image">Sem capa</div></td>
+                    <td>Dom Casmurro</td>
+                    <td>Companhia das Letras</td>
+                    <td>Romance</td>
+                    <td class="col-previa"><a href="https://books.google.com.br" target="_blank" class="btn-previa">📖 Ler prévia</a></td>
+                    <td class="col-acoes">
+                        <div class="action-buttons">
+                            <a href="#" class="btn-edit">✏️ Editar</a>
+                            <a href="#" class="btn-delete">🗑️ Excluir</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-capa"><div class="no-image">Sem capa</div></td>
+                    <td>Memórias Póstumas de Brás Cubas</td>
+                    <td>Principis</td>
+                    <td>Romance</td>
+                    <td class="col-previa"><a href="https://books.google.com.br" target="_blank" class="btn-previa">📖 Ler prévia</a></td>
+                    <td class="col-acoes">
+                        <div class="action-buttons">
+                            <a href="#" class="btn-edit">✏️ Editar</a>
+                            <a href="#" class="btn-delete">🗑️ Excluir</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+</body>
+</html>

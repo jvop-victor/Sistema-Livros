@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal — Sistema Literário</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📚</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="topbar">
+        <a href="login.html" class="btn-back">🚪 Sair</a>
+    </div>
+
+    <div class="page-header">
+        <h1>📚 Sistema Literário</h1>
+        <!-- "admin" é fixo aqui. Na Fase 2 vira <?php echo $_SESSION['usuario']; ?> -->
+        <p>Olá, <strong>admin</strong>! O que deseja fazer?</p>
+    </div>
+
+    <div class="menu-grid">
+
+        <div class="menu-card">
+            <a href="cadastro_autor.html">
+                <div class="menu-card-icon">✍️</div>
+                <div class="menu-card-title">Gerenciar Autores</div>
+                <div class="menu-card-desc">Cadastre e edite autores</div>
+            </a>
+        </div>
+
+        <div class="menu-card">
+            <a href="cadastro_livro.html">
+                <div class="menu-card-icon">📖</div>
+                <div class="menu-card-title">Cadastrar Livros</div>
+                <div class="menu-card-desc">Adicione livros ao sistema</div>
+            </a>
+        </div>
+
+        <div class="menu-card">
+            <a href="listagem_livros.html">
+                <div class="menu-card-icon">📚</div>
+                <div class="menu-card-title">Biblioteca de Livros</div>
+                <div class="menu-card-desc">Visualize e filtre todos os livros</div>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
